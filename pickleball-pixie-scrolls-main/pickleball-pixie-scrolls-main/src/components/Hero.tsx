@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 import { TextPlugin } from "gsap/TextPlugin";
-import { PickleballGlobe } from './PickleballGlobe';
+// import { PickleballGlobe } from './PickleballGlobe';
 
 export const Hero = () => {
   const heroRef = useRef<HTMLDivElement>(null);
@@ -93,15 +93,14 @@ export const Hero = () => {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      {/* Add the PickleballGlobe component */}
-      <PickleballGlobe />
-
+      //{/* Add the PickleballGlobe component */}
+      
       {/* Background gradient */}
       <div
         className="absolute inset-0 opacity-90 dark:opacity-80"
         style={{
-          background: 'linear-gradient(135deg, hsla(139, 86%, 36%, 1) 6%, hsla(209, 70%, 62%, 1) 78%)',
-          filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#0DAC3F", endColorstr="#5CA1E2", GradientType=1)',
+          background: 'linear-gradient(135deg, hsla(98, 32%, 20%, 1) 27%, hsla(95, 32%, 28%, 1) 53%, hsla(94, 33%, 40%, 1) 78%, hsla(93, 36%, 52%, 1) 94%, hsla(92, 55%, 62%, 1) 100%)',
+          filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#2E4222", endColorstr="#435D30", GradientType=1)',
         }}
       ></div>
 
@@ -120,7 +119,7 @@ export const Hero = () => {
           {/* Tag positioned above the title */}
           <div className="mb-6 inline-flex items-center justify-center px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 shadow-sm animate-pulse-soft">
             <span className="inline-block w-2 h-2 rounded-full bg-green-400 mr-2"></span>
-            <p className="text-sm font-medium text-forest-darkest">
+            <p className="text-sm font-medium text-white">
               New: AI-Powered Shot Analysis
             </p>
           </div>
@@ -128,7 +127,7 @@ export const Hero = () => {
           <div className="relative mb-6">
             <h1
               ref={titleRef}
-              className="text-gradient-animated text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-forest-darkest bg-gradient-to-r from-forest-darkest/30 via-forest-medium/30 to-forest-darkest/30 bg-[length:200%_auto] inline-block"
+              className="text-gradient-animated text-4xl md:text-5xl lg:text-6xl font-bold leading-tight text-white bg-gradient-to-r from-white/30 via-white/30 to-white/30 bg-[length:200%_auto] inline-block"
             >
               {/* Title will be dynamically updated here */}
             </h1>
@@ -136,7 +135,7 @@ export const Hero = () => {
 
           <p
             ref={subtitleRef}
-            className="text-lg md:text-xl text-forest-dark mb-8 max-w-2xl mx-auto"
+            className="text-lg md:text-xl text-white/90 mb-8 max-w-2xl mx-auto"
           >
             Revolutionize your pickleball play with AI-driven insights that
             transform every match into a learning opportunity.
