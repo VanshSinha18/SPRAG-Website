@@ -93,14 +93,16 @@ export const Hero = () => {
 
   return (
     <div className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
-      //{/* Add the PickleballGlobe component */}
-      
+      {/* Add the PickleballGlobe component */}
+
       {/* Background gradient */}
       <div
         className="absolute inset-0 opacity-90 dark:opacity-80"
         style={{
-          background: 'linear-gradient(135deg, hsla(98, 32%, 20%, 1) 27%, hsla(95, 32%, 28%, 1) 53%, hsla(94, 33%, 40%, 1) 78%, hsla(93, 36%, 52%, 1) 94%, hsla(92, 55%, 62%, 1) 100%)',
-          filter: 'progid:DXImageTransform.Microsoft.gradient(startColorstr="#2E4222", endColorstr="#435D30", GradientType=1)',
+          background:
+            "linear-gradient(135deg, hsla(98, 32%, 20%, 1) 27%, hsla(95, 32%, 28%, 1) 53%, hsla(94, 33%, 40%, 1) 78%, hsla(93, 36%, 52%, 1) 94%, hsla(92, 55%, 62%, 1) 100%)",
+          filter:
+            'progid:DXImageTransform.Microsoft.gradient(startColorstr="#2E4222", endColorstr="#435D30", GradientType=1)',
         }}
       ></div>
 
